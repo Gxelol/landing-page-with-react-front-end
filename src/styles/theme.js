@@ -9,5 +9,14 @@ export const theme = {
       default: "'Open Sans', sans-serif",
       secondary: "'Montserrat', sans-serif",
     },
+    sizes: {
+      small: '1.6rem',
+      medium: '3rem',
+      big: '4.6rem',
+      huge: '5.8rem',
+    },
+  },
+  media: {
+    lteMedium: '(max-width: 76.8rem)',
   },
 };

@@ -1,12 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyle } from './styles/global-styles';
 import { theme } from './styles/theme';
 import Home from './templates/Home';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
