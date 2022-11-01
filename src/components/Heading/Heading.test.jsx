@@ -16,6 +16,12 @@ describe('<Heading />', () => {
     });
   });
 
+  it('should match snapshot', () => {
+    renderTheme(<Heading> children </Heading>);
+    const { container } = screen.getByRole('heading', { name: 'children' });
+    expect(container).toMatchSnapshot();
+  });
+
   it('should render with primaryColor', () => {
     renderTheme(<Heading light={false}> children </Heading>);
     const heading = screen.getByRole('heading', { name: 'children' });
