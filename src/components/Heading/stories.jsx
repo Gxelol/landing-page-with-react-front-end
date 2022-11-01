@@ -7,7 +7,7 @@ export default {
     children: 'Dark Theme',
   },
   argTypes: {
-    children: { type: 'string ' },
+    children: { type: 'string' },
   },
   parameters: {
     backgrounds: {
