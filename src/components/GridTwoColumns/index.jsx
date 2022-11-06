@@ -7,9 +7,11 @@ import { Text } from '../Text';
 export const GridTwoColumns = ({ title, text, srcImg, background = false }) => {
   return (
     <SectionBackground background={background}>
-      <Styled.Container background={background}>
+      <Styled.Container>
         <Styled.TextContainer>
-          <Heading uppercase>{title}</Heading>
+          <Heading uppercase light={background}>
+            {title}
+          </Heading>
           <Text>{text}</Text>
         </Styled.TextContainer>
         <Styled.ImageContainer>
