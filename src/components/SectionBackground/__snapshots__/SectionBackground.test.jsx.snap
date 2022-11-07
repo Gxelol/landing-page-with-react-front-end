@@ -48,6 +48,8 @@ exports[`<SectionBackground /> should render with light background 1`] = `
 .c0 {
   background: #ffffff;
   color: #0A1128;
+  background: #0A1128;
+  color: #ffffff;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;

@@ -13,8 +13,8 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-size: 1.6rem;
-    background-color: black;
     font-family: 'Open-sans', sans-serif;
+    min-width: 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
