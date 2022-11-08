@@ -30,21 +30,21 @@ describe('<Footer />', () => {
       }
 
       <div>
-        <div
+        <section
           class="c0"
         >
-          <div
+          <footer
             class="c1"
           >
-            <footer
+            <div
               class="c2"
             >
               <h1>
                 Hello
               </h1>
-            </footer>
-          </div>
-        </div>
+            </div>
+          </footer>
+        </section>
       </div>
     `);
   });

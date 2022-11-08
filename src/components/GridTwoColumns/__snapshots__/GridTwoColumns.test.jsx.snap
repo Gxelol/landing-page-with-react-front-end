@@ -66,13 +66,13 @@ exports[`<GridTwoColumns /> should render grid two columns 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <div
@@ -83,11 +83,11 @@ exports[`<GridTwoColumns /> should render grid two columns 1`] = `
           >
             Grid Two Columns
           </h2>
-          <footer
+          <div
             class="c6"
           >
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatibus dolores obcaecati reprehenderit officiis libero recusandae fuga amet molestiae commodi, provident alias numquam doloribus ducimus debitis eius nemo laboriosam? Sapiente!
-          </footer>
+          </div>
         </div>
         <div
           class=""
@@ -98,8 +98,8 @@ exports[`<GridTwoColumns /> should render grid two columns 1`] = `
             src="assets/images/javascript.svg"
           />
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 </div>
 `;

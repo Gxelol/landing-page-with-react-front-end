@@ -65,13 +65,13 @@ exports[`<GridImage /> should render with background 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <h2
@@ -79,11 +79,11 @@ exports[`<GridImage /> should render with background 1`] = `
         >
           Gallery
         </h2>
-        <footer
+        <div
           class="c4 c5"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos.
-        </footer>
+        </div>
         <div
           class="c6"
         >
@@ -142,9 +142,9 @@ exports[`<GridImage /> should render with background 1`] = `
             />
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 </div>
 `;
 
@@ -215,13 +215,13 @@ exports[`<GridImage /> should render without background 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <h2
@@ -229,11 +229,11 @@ exports[`<GridImage /> should render without background 1`] = `
         >
           Gallery
         </h2>
-        <footer
+        <div
           class="c4 c5"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos.
-        </footer>
+        </div>
         <div
           class="c6"
         >
@@ -292,8 +292,8 @@ exports[`<GridImage /> should render without background 1`] = `
             />
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 </div>
 `;

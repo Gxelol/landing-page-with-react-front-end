@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { Title as Heading } from '../Heading/styles';
 import { Container as Text } from '../Text/styles';
 
-export const Container = styled.div`
+export const Container = styled.section`
   ${({ theme }) => css`
     ${Text} {
       margin-bottom: ${theme.spacings.xhuge};

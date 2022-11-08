@@ -15,11 +15,11 @@ describe('<Text />', () => {
         font-size: 2.4rem;
       }
 
-      <footer
+      <div
         class="c0"
       >
         Children
-      </footer>
+      </div>
     `);
   });
 });

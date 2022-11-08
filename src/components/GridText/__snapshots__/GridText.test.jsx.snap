@@ -73,13 +73,13 @@ exports[`<GridText /> should render with background 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <h2
@@ -87,11 +87,11 @@ exports[`<GridText /> should render with background 1`] = `
         >
           My Grid
         </h2>
-        <footer
+        <div
           class="c5 c6"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos, deserunt odit at pariatur totam ad culpa voluptatem ex placeat quod porro.
-        </footer>
+        </div>
         <div
           class="c7"
         >
@@ -103,11 +103,11 @@ exports[`<GridText /> should render with background 1`] = `
             >
               Test 1
             </h3>
-            <footer
+            <div
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </footer>
+            </div>
           </div>
           <div
             class="c8"
@@ -117,11 +117,11 @@ exports[`<GridText /> should render with background 1`] = `
             >
               Test 2
             </h3>
-            <footer
+            <div
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </footer>
+            </div>
           </div>
           <div
             class="c8"
@@ -131,16 +131,16 @@ exports[`<GridText /> should render with background 1`] = `
             >
               Test 3
             </h3>
-            <footer
+            <div
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </footer>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 </div>
 `;
 
@@ -219,13 +219,13 @@ exports[`<GridText /> should render without background 1`] = `
 }
 
 <div>
-  <div
+  <section
     class="c0"
   >
-    <div
+    <section
       class="c1"
     >
-      <div
+      <section
         class="c2"
       >
         <h2
@@ -233,11 +233,11 @@ exports[`<GridText /> should render without background 1`] = `
         >
           My Grid
         </h2>
-        <footer
+        <div
           class="c5 c6"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos, deserunt odit at pariatur totam ad culpa voluptatem ex placeat quod porro.
-        </footer>
+        </div>
         <div
           class="c7"
         >
@@ -249,11 +249,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               Test 1
             </h3>
-            <footer
+            <div
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </footer>
+            </div>
           </div>
           <div
             class="c8"
@@ -263,11 +263,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               Test 2
             </h3>
-            <footer
+            <div
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </footer>
+            </div>
           </div>
           <div
             class="c8"
@@ -277,15 +277,15 @@ exports[`<GridText /> should render without background 1`] = `
             >
               Test 3
             </h3>
-            <footer
+            <div
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </footer>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
+      </section>
+    </section>
+  </section>
 </div>
 `;
