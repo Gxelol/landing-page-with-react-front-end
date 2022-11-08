@@ -49,6 +49,7 @@ exports[`<GridText /> should render with background 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -86,11 +87,11 @@ exports[`<GridText /> should render with background 1`] = `
         >
           My Grid
         </h2>
-        <p
+        <footer
           class="c5 c6"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos, deserunt odit at pariatur totam ad culpa voluptatem ex placeat quod porro.
-        </p>
+        </footer>
         <div
           class="c7"
         >
@@ -102,11 +103,11 @@ exports[`<GridText /> should render with background 1`] = `
             >
               Test 1
             </h3>
-            <p
+            <footer
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </p>
+            </footer>
           </div>
           <div
             class="c8"
@@ -116,11 +117,11 @@ exports[`<GridText /> should render with background 1`] = `
             >
               Test 2
             </h3>
-            <p
+            <footer
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </p>
+            </footer>
           </div>
           <div
             class="c8"
@@ -130,11 +131,11 @@ exports[`<GridText /> should render with background 1`] = `
             >
               Test 3
             </h3>
-            <p
+            <footer
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </p>
+            </footer>
           </div>
         </div>
       </div>
@@ -192,6 +193,7 @@ exports[`<GridText /> should render without background 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -231,11 +233,11 @@ exports[`<GridText /> should render without background 1`] = `
         >
           My Grid
         </h2>
-        <p
+        <footer
           class="c5 c6"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos, deserunt odit at pariatur totam ad culpa voluptatem ex placeat quod porro.
-        </p>
+        </footer>
         <div
           class="c7"
         >
@@ -247,11 +249,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               Test 1
             </h3>
-            <p
+            <footer
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </p>
+            </footer>
           </div>
           <div
             class="c8"
@@ -261,11 +263,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               Test 2
             </h3>
-            <p
+            <footer
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </p>
+            </footer>
           </div>
           <div
             class="c8"
@@ -275,11 +277,11 @@ exports[`<GridText /> should render without background 1`] = `
             >
               Test 3
             </h3>
-            <p
+            <footer
               class="c5 c6"
             >
               Morbi hendrerit nec augue ac placerat. Duis vestibulum augue turpis. Nulla consectetur justo ac justo aliquet, vel auctor augue condimentum.
-            </p>
+            </footer>
           </div>
         </div>
       </div>

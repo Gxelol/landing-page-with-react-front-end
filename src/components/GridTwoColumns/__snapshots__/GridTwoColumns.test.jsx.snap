@@ -25,6 +25,7 @@ exports[`<GridTwoColumns /> should render grid two columns 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -82,11 +83,11 @@ exports[`<GridTwoColumns /> should render grid two columns 1`] = `
           >
             Grid Two Columns
           </h2>
-          <p
+          <footer
             class="c6"
           >
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod voluptatibus dolores obcaecati reprehenderit officiis libero recusandae fuga amet molestiae commodi, provident alias numquam doloribus ducimus debitis eius nemo laboriosam? Sapiente!
-          </p>
+          </footer>
         </div>
         <div
           class=""

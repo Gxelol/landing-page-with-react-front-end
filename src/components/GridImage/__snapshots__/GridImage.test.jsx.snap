@@ -41,6 +41,7 @@ exports[`<GridImage /> should render with background 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -78,11 +79,11 @@ exports[`<GridImage /> should render with background 1`] = `
         >
           Gallery
         </h2>
-        <p
+        <footer
           class="c4 c5"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos.
-        </p>
+        </footer>
         <div
           class="c6"
         >
@@ -188,6 +189,7 @@ exports[`<GridImage /> should render without background 1`] = `
   max-width: 120rem;
   margin: 0 auto;
   padding: 3.2rem;
+  width: 100%;
 }
 
 .c0 {
@@ -227,11 +229,11 @@ exports[`<GridImage /> should render without background 1`] = `
         >
           Gallery
         </h2>
-        <p
+        <footer
           class="c4 c5"
         >
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum asperiores saepe impedit illo recusandae! Et assumenda vitae quos.
-        </p>
+        </footer>
         <div
           class="c6"
         >
