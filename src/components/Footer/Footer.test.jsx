@@ -7,44 +7,53 @@ describe('<Footer />', () => {
     const { container } = renderTheme(<Footer html={`<h1>Hello</h1>`} />);
     expect(screen.getByRole('heading', { name: 'Hello' })).toBeInTheDocument();
     expect(container).toMatchInlineSnapshot(`
-      .c1 {
-        text-align: center;
-      }
-
-      .c1 a {
-        color: inherit;
-        -webkit-text-decoration: none;
-        text-decoration: none;
-        font-size: 1.6rem;
-      }
-
-      .c2 {
+      .c4 {
         font-size: 2.4rem;
       }
 
-      .c0 {
+      .c2 {
         max-width: 120rem;
         margin: 0 auto;
         padding: 3.2rem;
         width: 100%;
       }
 
+      .c0 {
+        text-align: center;
+        border-top: 0.1rem solid #0A1128;
+      }
+
+      .c0 a {
+        color: inherit;
+        -webkit-text-decoration: none;
+        text-decoration: none;
+      }
+
+      .c0 .c3 {
+        font-size: 1.6rem;
+      }
+
+      .c0 .c1 {
+        padding-top: 0;
+        padding-bottom: 0;
+      }
+
       <div>
-        <section
+        <footer
           class="c0"
         >
-          <footer
-            class="c1"
+          <section
+            class="c1 c2"
           >
             <div
-              class="c2"
+              class="c3 c4"
             >
               <h1>
                 Hello
               </h1>
             </div>
-          </footer>
-        </section>
+          </section>
+        </footer>
       </div>
     `);
   });

@@ -5,11 +5,11 @@ import { SectionContainer } from '../SectionContainer';
 
 export const Footer = ({ html }) => {
   return (
-    <SectionContainer>
-      <Styled.Container>
+    <Styled.Container>
+      <SectionContainer>
         <Text>{html}</Text>
-      </Styled.Container>
-    </SectionContainer>
+      </SectionContainer>
+    </Styled.Container>
   );
 };
 

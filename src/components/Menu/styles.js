@@ -14,7 +14,7 @@ export const Container = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    width: 100%;
     border-bottom: ${theme.colors.lightGray};
     background: ${theme.colors.white};
 
@@ -35,19 +35,18 @@ export const Container = styled.div`
       ${visible && menuVisible(theme)}
 
       > ${SectionContainer} {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr;
-      height: 100vh;
-      align-items: center;
-      overflow-y: auto;
-    }
-
-    & ${Heading} {
-      padding-bottom: ${theme.spacings.large};
-      display: flex;
-      justify-content: center;
-    }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        height: 100vh;
+        align-items: center;
+        overflow-y: auto;
+      }
+      & ${Heading} {
+        padding-bottom: ${theme.spacings.large};
+        display: flex;
+        justify-content: center;
+      }
     }
   `}
 `;
@@ -57,7 +56,6 @@ export const MenuContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     @media ${theme.media.lteSmall} {
       display: block;
       text-align: center;
@@ -65,17 +63,17 @@ export const MenuContainer = styled.div`
     }
   `}
 `;
+
 export const Button = styled.button`
   ${({ theme, visible }) => css`
-    position: fixed;
     z-index: 6;
+    position: fixed;
     top: 2rem;
     right: 2rem;
     width: 4rem;
     height: 4rem;
     background: ${theme.colors.primaryColor};
     color: ${theme.colors.white};
-    cursor: pointer;
     border: none;
     display: none;
     pointer-events: ${visible ? 'none' : 'all'};
@@ -87,8 +85,8 @@ export const Button = styled.button`
     }
 
     > svg {
-      width: 2.6rem;
-      height: 2.6rem;
+      width: 2.5rem;
+      height: 2.5rem;
     }
   `}
 `;

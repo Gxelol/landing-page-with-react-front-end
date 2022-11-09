@@ -15,7 +15,7 @@ export const GridContainer = styled.div`
     counter-reset: grid-counter;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
-    gap: ${theme.spacings.large}
+    gap: ${theme.spacings.large};
   `}
 `;
 
