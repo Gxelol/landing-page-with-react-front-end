@@ -16,6 +16,12 @@ export const GridContainer = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr));
     gap: ${theme.spacings.large};
+    overflow: hidden;
+    width: 100%;
+
+    @media ${theme.media.lteSmall} {
+      grid-template-columns: 1fr;
+    }
   `}
 `;
 
