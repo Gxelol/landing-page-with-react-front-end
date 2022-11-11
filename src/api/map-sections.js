@@ -11,7 +11,7 @@ export const mapSections = (sections = []) => {
     }
 
     if (section.__component === 'section.section-grid') {
-      const { __component: { text_grid = [], image_grid = [] } = '' } = section;
+      const { text_grid = [], image_grid = [] } = section;
 
       if (text_grid.lenght > 0) {
         return mapGridText(section);
@@ -77,7 +77,14 @@ export const mapGridText = (section = {}) => {
     description,
     background,
     sectionId,
-    textGrid,
+    textGrid: textGrid.map((txt) => {
+      const { title = '', description = '' } = txt;
+
+      return {
+        title,
+        description,
+      };
+    }),
   };
 };
 

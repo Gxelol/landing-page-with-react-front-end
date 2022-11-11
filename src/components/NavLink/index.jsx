@@ -19,5 +19,5 @@ NavLink.propTypes = {
       link: P.string,
       newTab: P.bool,
     }),
-  ).isRequired,
+  ),
 };
