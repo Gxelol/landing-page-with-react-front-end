@@ -9,19 +9,24 @@ import { GridImage } from '../../components/GridImage';
 
 import { mockBase } from '../Base/mock';
 import { Base } from '../Base';
+import { PageNotFound } from '../PageNotFound';
 
 function Home() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
     const load = async () => {
-      const data = await fetch(
-        `http://localhost:1337/api/pages/?populate[menu][populate]=*&populate[sections][populate]=*`,
-      );
-      const json = await data.json();
-      const { attributes } = json.data[0];
-      const pageData = mapData([attributes]);
-      setData(pageData[0]);
+      try {
+        const data = await fetch(
+          `http://localhost:1337/api/pages/?populate[menu][populate]=*&populate[sections][populate]=*`,
+        );
+        const json = await data.json();
+        const { attributes } = json.data[0];
+        const pageData = mapData([attributes]);
+        setData(pageData[0]);
+      } catch (e) {
+        setData(undefined);
+      }
     };
 
     load();
@@ -29,7 +34,7 @@ function Home() {
   }, []);
 
   if (data === undefined) {
-    return <h1>Page not found.</h1>;
+    return <PageNotFound />;
   }
 
   if (data && !data.slug) {
