@@ -4,11 +4,11 @@ import { SectionBackground } from '../SectionBackground';
 import { Heading } from '../Heading';
 import { Text } from '../Text';
 
-export const GridImage = ({ title, description, background, grid }) => {
+export const GridImage = ({ title, description, background = false, grid }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
-        <Heading size="huge" uppercase light={background} as="h2">
+        <Heading size="huge" uppercase darkColor={!background} as="h2">
           {title}
         </Heading>
         <Text>{description}</Text>

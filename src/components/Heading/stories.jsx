@@ -25,7 +25,7 @@ Light.parameters = {
   },
 };
 
-Light.args = {
+Dark.args = {
   children: 'Light Theme',
   light: false,
 };
