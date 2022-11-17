@@ -83,6 +83,7 @@ exports[`<GridText /> should render with background 1`] = `
 <div>
   <section
     class="c0"
+    id=""
   >
     <section
       class="c1"
@@ -154,13 +155,13 @@ exports[`<GridText /> should render with background 1`] = `
 
 exports[`<GridText /> should render without background 1`] = `
 .c4 {
-  color: #ffffff;
+  color: #0A1128;
   font-size: 5.8rem;
   text-transform: uppercase;
 }
 
 .c9 {
-  color: #ffffff;
+  color: #0A1128;
   font-size: 3rem;
   text-transform: none;
 }
@@ -209,8 +210,6 @@ exports[`<GridText /> should render without background 1`] = `
 .c0 {
   background: #ffffff;
   color: #0A1128;
-  background: #0A1128;
-  color: #ffffff;
   min-height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -237,6 +236,7 @@ exports[`<GridText /> should render without background 1`] = `
 <div>
   <section
     class="c0"
+    id=""
   >
     <section
       class="c1"

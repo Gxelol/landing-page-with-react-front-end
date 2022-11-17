@@ -51,6 +51,7 @@ exports[`<GridContent /> should render with background 1`] = `
 <div>
   <section
     class="c0"
+    id=""
   >
     <section
       class="c1"
@@ -218,6 +219,7 @@ exports[`<GridContent /> should render without background 1`] = `
 <div>
   <section
     class="c0"
+    id=""
   >
     <section
       class="c1"

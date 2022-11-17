@@ -84,7 +84,7 @@ exports[`<Menu /> should not render links 1`] = `
 }
 
 .c8 > img {
-  max-height: 2.5rem;
+  height: 2.5rem;
 }
 
 .c9 {
@@ -95,6 +95,7 @@ exports[`<Menu /> should not render links 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  text-transform: uppercase;
 }
 
 .c1 {
@@ -307,7 +308,7 @@ exports[`<Menu /> should render Logo and Main Menu 1`] = `
 }
 
 .c8 > img {
-  max-height: 2.5rem;
+  height: 2.5rem;
 }
 
 .c9 {
@@ -318,6 +319,7 @@ exports[`<Menu /> should render Logo and Main Menu 1`] = `
   -webkit-flex-flow: row wrap;
   -ms-flex-flow: row wrap;
   flex-flow: row wrap;
+  text-transform: uppercase;
 }
 
 .c10 {

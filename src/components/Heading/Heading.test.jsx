@@ -10,7 +10,7 @@ describe('<Heading />', () => {
     const heading = screen.getByRole('heading', { name: 'children' });
 
     expect(heading).toHaveStyle({
-      color: theme.colors.white,
+      color: theme.colors.primaryColor,
       'font-size': theme.fonts.sizes.huge,
       'text-transform': 'none',
     });
@@ -22,12 +22,12 @@ describe('<Heading />', () => {
     expect(container).toMatchSnapshot();
   });
 
-  it('should render with primaryColor', () => {
-    renderTheme(<Heading light={false}> children </Heading>);
+  it('should render with whiteColor', () => {
+    renderTheme(<Heading darkColor={false}> children </Heading>);
     const heading = screen.getByRole('heading', { name: 'children' });
 
     expect(heading).toHaveStyle({
-      color: theme.colors.primaryColor,
+      color: theme.colors.white,
     });
   });
 

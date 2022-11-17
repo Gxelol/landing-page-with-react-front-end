@@ -1,10 +1,9 @@
 import {
-  mapGridImage,
-  mapGridText,
+  mapImageGrid,
   mapSectionContent,
-  mapSectionGrid,
   mapSections,
   mapSectionTwoColumns,
+  mapTextGrid,
 } from './map-sections';
 
 import fakeData from './data.json';
@@ -68,9 +67,11 @@ describe('map-sections', () => {
         name: 'Home',
       },
       image: {
-        name: 'javascript.svg',
-        alternativeText: 'People holding drawings with Logos',
-        url: 'a.svg',
+        data: {
+          attributes: {
+            url: 'a.svg',
+          },
+        },
       },
     });
     expect(data.component).toBe('section.section-two-columns');
@@ -108,63 +109,26 @@ describe('map-sections', () => {
     expect(data.sectionId).toBe('intro');
   });
 
-  it('should map section text grid with no values', () => {
-    const data = mapGridText();
-    expect(data.component).toBe('section.grid-text');
+  it('should map grid image without data', () => {
+    const data = mapImageGrid(undefined);
+    expect(data.background).toBe(false);
+    expect(data.component).toBe('section.section-grid-image');
+    expect(data.sectionId).toBe('');
     expect(data.title).toBe('');
     expect(data.description).toBe('');
-    expect(data.background).toBe(false);
-    expect(data.sectionId).toBe('');
   });
 
-  it('should map section text grid with values', () => {
-    const data = mapGridText({
-      __component: 'section.grid-text',
-      description: 'My description',
-      title: 'My Grid',
-      text_grid: [
-        {
-          title: 'Teste 1',
-          description: 'my grid description',
-        },
-      ],
-      image_grid: [],
-      metadata: {
-        background: true,
-        name: 'grid-one',
-        section_id: 'grid-one',
-      },
-    });
-    expect(data.component).toBe('section.grid-text');
-    expect(data.title).toBe('My Grid');
-    expect(data.description).toBe('My description');
-    expect(data.background).toBe(true);
-    expect(data.sectionId).toBe('grid-one');
-    expect(data.textGrid[0].title).toBe(`Teste 1`);
-    expect(data.textGrid[0].description).toBe(`my grid description`);
-  });
-
-  it('should map section image grid with no values', () => {
-    const data = mapGridImage();
-    expect(data.component).toBe('section.grid-image');
-    expect(data.title).toBe('');
-    expect(data.description).toBe('');
-    expect(data.background).toBe(false);
-    expect(data.sectionId).toBe('');
-  });
-
-  it('should map section image grid with values', () => {
-    const data = mapGridImage({
-      __component: 'section.grid-image',
-      _id: '602fdf2d540c00269e056175',
-      description: 'image grid.',
+  it('should map grid image with data', () => {
+    const data = mapImageGrid({
+      __component: 'section.section-grid',
+      description: 'abc',
       title: 'Gallery',
       text_grid: [],
       image_grid: [
         {
           image: {
-            alternativeText: 'Something',
-            url: 'a.jpg',
+            alternativeText: 'abc',
+            url: 'a.svg',
           },
         },
       ],
@@ -174,12 +138,12 @@ describe('map-sections', () => {
         section_id: 'gallery',
       },
     });
-    expect(data.component).toBe('section.grid-image');
-    expect(data.title).toBe('Gallery');
-    expect(data.description).toBe('image grid.');
     expect(data.background).toBe(false);
+    expect(data.component).toBe('section.section-grid-image');
     expect(data.sectionId).toBe('gallery');
-    expect(data.imageGrid[0].srcImg).toBe('a.jpg');
-    expect(data.imageGrid[0].altText).toBe('Something');
+    expect(data.title).toBe('Gallery');
+    expect(data.description).toBe('abc');
+    expect(data.grid[0].srcImg).toBe('a.svg');
+    expect(data.grid[0].altText).toBe('abc');
   });
 });

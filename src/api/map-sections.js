@@ -85,22 +85,25 @@ export const mapTextGrid = (section = {}) => {
 
 export const mapImageGrid = (section = {}) => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
-    srcImg = section?.image_grid?.image?.data?.attributes?.url || '',
-    altText = section?.image_grid?.image?.data?.attributes?.alternativeText ||
-      '',
+    image_grid: grid = [],
   } = section;
-
   return {
     component: 'section.section-grid-image',
     title,
     background,
     sectionId,
     description,
-    srcImg,
-    altText,
+    grid: grid.map((img) => {
+      const {
+        image: { url: srcImg = '', alternativeText: altText = '' } = '',
+      } = img;
+      return {
+        srcImg,
+        altText,
+      };
+    }),
   };
 };
