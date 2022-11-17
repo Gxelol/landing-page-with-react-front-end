@@ -10,9 +10,10 @@ export const GridImage = ({
   srcImg,
   altText,
   background = false,
+  sectionId = '',
 }) => {
   return (
-    <SectionBackground background={background}>
+    <SectionBackground background={background} sectionId={sectionId}>
       <Styled.Container>
         <Heading size="huge" uppercase colorDark={!background} as="h2">
           {title}
@@ -34,4 +35,5 @@ GridImage.propTypes = {
   description: P.string.isRequired,
   altText: P.string.isRequired,
   srcImg: P.string.isRequired,
+  sectionId: P.string,
 };
