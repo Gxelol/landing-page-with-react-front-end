@@ -97,13 +97,31 @@ export const mapImageGrid = (section = {}) => {
     sectionId,
     description,
     grid: grid.map((img) => {
-      const {
-        image: { url: srcImg = '', alternativeText: altText = '' } = '',
-      } = img;
-      return {
-        srcImg,
-        altText,
-      };
-    }),
+      const data = img.image.data;
+      return data.map((obj) => {
+        const {
+          attributes: { url: srcImg = '', alternativeText: altText = '' } = '',
+        } = obj;
+        return {
+          srcImg,
+          altText,
+        };
+      });
+    })[0],
+
+    // srcImg: grid.map((section) => {
+    //   return section.image.data.map((data) => {
+    //     const srcImg = data.attributes.url;
+
+    //     return { srcImg };
+    //   });
+    // })[0][0].srcImg,
+    // altText: grid.map((section) => {
+    //   return section.image.data.map((data) => {
+    //     const altText = data.attributes.alternativeText;
+
+    //     return altText;
+    //   });
+    // })[0][0].altText,
   };
 };
