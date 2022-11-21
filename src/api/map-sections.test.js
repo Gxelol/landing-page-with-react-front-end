@@ -15,7 +15,7 @@ describe('map-sections', () => {
   });
 
   it('should render sections with correct data', () => {
-    const data = mapSections(fakeData[0].sections);
+    const data = mapSections(fakeData.data[0].attributes.sections);
     expect(data[0].component).toBe('section.section-two-columns');
   });
 
@@ -27,16 +27,21 @@ describe('map-sections', () => {
     ]);
 
     const noComponent = mapSections([{}]);
-
     expect(noTextOrImage).toEqual([{ __component: 'section.section-grid' }]);
     expect(noComponent).toEqual([{}]);
   });
 
-  it('should test section grid with no image or text', () => {
+  it('should test section-grid with no text or image', () => {
     const noTextOrImage = mapSections([
       {
         __component: 'section.section-grid',
-        image_grid: [{}],
+        image_grid: [
+          {
+            image: {
+              data: [{}],
+            },
+          },
+        ],
       },
       {
         __component: 'section.section-grid',
@@ -127,8 +132,14 @@ describe('map-sections', () => {
       image_grid: [
         {
           image: {
-            alternativeText: 'abc',
-            url: 'a.svg',
+            data: [
+              {
+                attributes: {
+                  url: 'a.svg',
+                  alternativeText: 'abc',
+                },
+              },
+            ],
           },
         },
       ],

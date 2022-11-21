@@ -98,7 +98,54 @@ exports[`<GridImage /> should render with background 1`] = `
             class="c7"
           >
             <img
+              alt="Test 1"
               class="c8"
+              src="https://source.unsplash.com/random/360x360?r=1"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 2"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=2"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 3"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=3"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 4"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=4"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 5"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=5"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 6"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=6"
             />
           </div>
         </div>
@@ -206,7 +253,54 @@ exports[`<GridImage /> should render without background 1`] = `
             class="c7"
           >
             <img
+              alt="Test 1"
               class="c8"
+              src="https://source.unsplash.com/random/360x360?r=1"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 2"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=2"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 3"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=3"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 4"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=4"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 5"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=5"
+            />
+          </div>
+          <div
+            class="c7"
+          >
+            <img
+              alt="Test 6"
+              class="c8"
+              src="https://source.unsplash.com/random/360x360?r=6"
             />
           </div>
         </div>
