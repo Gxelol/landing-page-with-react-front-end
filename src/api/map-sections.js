@@ -108,20 +108,5 @@ export const mapImageGrid = (section = {}) => {
         };
       });
     })[0],
-
-    // srcImg: grid.map((section) => {
-    //   return section.image.data.map((data) => {
-    //     const srcImg = data.attributes.url;
-
-    //     return { srcImg };
-    //   });
-    // })[0][0].srcImg,
-    // altText: grid.map((section) => {
-    //   return section.image.data.map((data) => {
-    //     const altText = data.attributes.alternativeText;
-
-    //     return altText;
-    //   });
-    // })[0][0].altText,
   };
 };
